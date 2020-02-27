@@ -5,8 +5,59 @@ Ray is a library than can create windows, play music, and draw 2D graphics (or
 not too complex 3D by doing just a bit more work, thanks to OpenGL). It is meant
 to be easy and fun to use (à la Shoes), and still flexible and powerful.
 
-Tutorial & Installation
-=======================
+Prerequisites
+=============
+
+You will need a few dependencies:
+- GLEW
+- libsndfile
+- Freetype
+- Xlib
+- OpenAL
+- OpenGL
+
+On Ubuntu, you can run:
+```sh
+sudo apt install glew-utils libglew-dev libsndfile1-dev libfreetype6-dev libxrandr-dev libopenal-dev
+```
+On Arch Linux, you can run:
+```sh
+pacman -S glew libsndfile freetype2 openal
+```
+On macOS, you can run:
+```sh
+brew install glew libsndfile
+```
+
+On Arch Linux, you can run:
+
+Installation
+============
+
+### Via Bundler
+
+Add to your `Gemfile`:
+
+```ruby
+gem 'ray'
+```
+
+Then run:
+
+```sh
+bundle install
+```
+
+### Via RubyGems
+
+Run:
+
+```sh
+gem install ray
+```
+
+Tutorial
+========
 
 See [on this page](http://mon-ouie.github.com/projects/ray.html). Also notice
 there's an IRC channel on freenode: #ray.
